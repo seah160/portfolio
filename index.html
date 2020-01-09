@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio SeAh Kim</title>
+  <!-- 공통 CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- 웹폰트 -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|Roboto&display=swap" rel="stylesheet">
+  <!-- FontAwesome(폰트 아이콘) -->
+  <script src="https://kit.fontawesome.com/42bc809b80.js" crossorigin="anonymous"></script>
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- 유투브 배경 -->
+  <script src="./js/jquery.youtube-background.js"></script> 
+  <!--이미지로드 방지-->
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <!-- 갤러리 팬시박스 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <!-- 진입 애니메이션 -->
+  <script src="https://unpkg.com/enter-view"></script>
+  <!-- 애니메이션 키프레임 -->
+  <link rel="stylesheet" href="ani.css">
+  <!-- 사용자 자바스크립트 -->
+  <script src="js/main.js"></script>
+  <!-- <script src="js/typeit.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/6.0.2/typeit.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <header id="main_header">
+    <div class="container">
+      <h1><a href="index.html"><img src="./images/logo.png" alt="로고" width="172" height="50">
+        </a></h1>
+      <nav id="main_gnb">
+        <ul>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#career">CAREER</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+      <!--
+      <button id="toggle"><i class="fas fa-bars"></i></button>-->
+    </div>
+  </header>
+
+  <nav id="pager">
+    <ul>
+      <li class="on"><a href="#home">o</a></li>
+      <li><a href="#about">o</a></li>
+      <li><a href="#portfolio">o</a></li>
+      <li><a href="#career">o</a></li>
+      <li><a href="#contact">o</a></li>
+    </ul>
+  </nav>
+  <section id="home">
+    <div class="header_group">
+    <a href="#"><h1 data-text='HELLO~ I’m SeAh Kim!<br>Welcome to my Portfolio Homepage!'class="type"></h1></a>
+    </div>
+    <div class="you-bg" data-youtube="https://youtu.be/LN8RNhbzn6E">
+    </div>
+    <div class="arrow">
+      <a href="#about">
+          <img src="images/arrow.png" alt="arrow">
+      </a>
+  </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h1>ABOUT ME</h1>
+      <span class="title_line"></span>
+      <article>
+        <img src="images/aboutme.jpg" alt="사진">
+      </article>
+      <article>
+        <div class="list">
+          <div class="edu">
+            <a href="#">
+              <h2><img src="./images/edu.png" alt="학력">
+            </a></h2>
+            <div class="line"></div>
+            <ul>
+              <li>
+                <a href="#">
+              <li>광명북고등학교 | 인문계열</a>
+                <span class="date">1996.03-1999.02</span>
+              </li>
+              <li>
+                <a href="#">
+              <li>경기대학교 | 시각디자인과</a>
+                <span class="date">1999.03-2003.02</span>
+                <p>3-1학기 & 4-1학기 성적장학생
+              </li>
+              <li>
+                <a href="#">
+              <li>더조은아카데미 | 웹디자인퍼블리셔</a>
+                <span class="date">2019.08-2020.01</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="awards">
+            <a href="#">
+              <h2><img src="./images/awards.png" alt="수상">
+            </a></h2>
+            <div class="line"></div>
+            <ul>
+              <li>
+                <a href="#">
+              <li>팩스타대학생공모전(입선)</a>
+                <span class="date">2002.12.06</span>
+              </li>
+              <li>
+                <a href="#">
+              <li>제7회 경기도산업디자인전(특선)</a>
+                <span class="date">2002.12.26</span>
+              </li>
+              <li>
+                <a href="#">
+              <li>제8회 세계일보광고공무전(금상)</a>
+                <span class="date">2001.11.09</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skills">
+            <a href="#">
+              <h2><img src="./images/skill.png" alt="스킬">
+            </a></h2>
+            <div class="line"></div>
+            <ul>
+              <li>
+                <a href="#"><img src="./images/program.png" alt="프로그램"></a>
+              </li>
+            </ul>
+          </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="container">
+      <div class="section-title">
+        <h1>PORTFOLIO</h1>
+            <div class="title_line"></div>
+            <div class="content">
+              <div class="button-group">
+                <button id="one">Web</button>
+                <button id="two">PACKAGE</button>
+                <button id="three">BRANDING</button>
+                <button id="four">POP</button>
+                <button id="five">AD</button>
+              </div>
+            </div>
+      </div>
+        <div class="gallery">
+          <div class="web box show">
+            <ul>
+              <li><a data-fancybox_="gallery" href="http://placeimg.com/360/360/1"><img
+                    src="http://placeimg.com/360/360/1"></a></li>
+              <li><a data-fancybox="gallery" href="http://placeimg.com/360/360/2"><img
+                    src="http://placeimg.com/360/360/2"></a></li>
+              <li><a data-fancybox="gallery" href="http://placeimg.com/360/360/3"><img
+                    src="http://placeimg.com/360/360/3"></a></li>
+              <li><a data-fancybox="gallery" href="http://placeimg.com/360/360/4"><img
+                    src="http://placeimg.com/360/360/4"></a></li>
+              <li><a data-fancybox="gallery" href="http://placeimg.com/360/360/5"><img
+                    src="http://placeimg.com/360/360/5"></a></li>
+              <li><a data-fancybox="gallery" href="http://placeimg.com/360/360/6"><img
+                    src="http://placeimg.com/360/360/6"></a></li>
+            </ul>
+          </div>
+      </div>
+      </div>
+  </section>
+  
+  <section id="career">
+    <div class="container">
+    <h1>MY RESUME</h1>
+      <span class="title_line"></span>
+      <article>
+        <a href="#"><img src="images/experience.png" alt="경력"></a>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h1>Contact me</h1>
+  </section>
+
+  <footer id="main_footer">
+    <p>Copyright &copy; 2020 SeAh Kim, All right Reserved.</p>
+  </footer>
+
+  <!--비디오배경 및 타이프 설정-->
+  <script>
+    $(function () {
+      $('[data-youtube]').youtube_background();
+          var h2 = document.querySelector('.type');
+          var text = h2.getAttribute('data-text');
+          var text_array = text.split('.')
+          console.log(text, text_array);
+          var agent = navigator.userAgent.toLowerCase();
+          
+          if ((navigator.appName == 'Netscape' && agent.indexOf('trident') != -1) || (agent.indexOf("msie") != -1)) {
+            h2.innerHTML = text[0] + '<br>' + text[1];
+          } else {
+            var el = '.type';
+            typeIt = new TypeIt(el, {
+              loop: true
+            });
+            typeIt
+              .type(text_array[0])
+              .pause(300)
+              .break()
+              .type(text_array[1])
+              .pause(5000)
+              .go();
+          }
+    });
+
+    // 콘텐츠 애니메이션 설정
+    enterView({
+      selector: '.header_group',  // 화면에 진입했을때 애니메이션이 될 요소명
+      offset: 0.5,          // 시작 지연시간(ms)
+      enter: function (el) {
+        el.classList.add('fade-slide-right');  // 애니메이션 클래스 명(CSS)
+      },
+    });
+    enterView({
+      selector: '#about ul',
+      offset: 0.5,
+      enter: function (el) {
+        el.classList.add('fade-slide-down');
+      },
+    });
+  </script>
+
+</body>
+
+</html>
