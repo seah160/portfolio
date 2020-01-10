@@ -8,7 +8,8 @@ a {
   text-decoration: none;
   color: #666;
 }
-html, body{ height: 100%;}
+html, body{ height: 100%;
+}
 button { 
   background: none;
   border: none;
@@ -34,7 +35,7 @@ section{
 .container {
   position: relative;
   flex: 1;
-  min-width: 1250px;
+  min-width: 1400px;
   max-width: 1400px;
   /* outline: 1px solid red; */
   padding-top: 100px;
@@ -66,26 +67,36 @@ h2 { font-size: 24px;}
   position: fixed;
   top: 50%;
   right: 20px;
-  z-index: 99;
+  z-index: 9;
 }
 #pager li.on a {
   color: #FCB08C;
 }
 
 /* 메인메뉴 */
+  /*화면의 고정 포지션*/
 #main_header {
-  position: relative;
+  position: fixed;
   background-color: #FFF;
   color: #666;
   /*box-shadow: 1px 1px rgba(100, 100, 100, 0.7);*/
   width: 100%;
   height: 90px;
+  min-width: 768px;
   margin: 0 auto;
+  overflow: hidden;
+  z-index: 999;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+#main_header > h1 {
+  position: absolute;
+  left: 20px; top: 10px;
 }
 #main_header .container {
   padding-top: 0px;
 }
-header #main_gnb {
+#main_gnb {
+  position: relative;
   float: right;
   text-align: right;
   background: #fff;
@@ -121,21 +132,19 @@ header #main_gnb li{
   margin: 0px auto;
   margin-bottom: 50px;
 }
-
-토글 메뉴, 장바구니 아이콘 비표시
-#toggle { display: none;}
-/*button {
-  color: #666; 
-}*/
-#home h1{
-  font-size: 3.6em;
-  color: #fff;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+.you-bg{
+  background: #fff;
+  height: 100%;
+  background-image: url("https://youtu.be/LN8RNhbzn6E");
+/*이미지가 패턴이 되지않고 가득채워짐*/
+  background-size:cover ;
 }
 .header_group {
-  z-index: 9;
+  z-index: 99;
   text-align: center;
   color: #fff;
+  font-size: 4em;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
 }
 .arrow {
     position: absolute;

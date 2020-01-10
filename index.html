@@ -5,7 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Portfolio SeAh Kim</title>
+  <meta name="description" content="사이트소개글">
+  <!--사이트 제목-->
+  <meta property="og:title" content="김세아 포트폴리오에 오신것을 환영합니다.">
+  <!--사이트설명-->
+  <meta property="og:description" content="김세아 포트폴리오">
+  <!--대표이미지-->
+  <meta property="og:image" content="./images/mainimage.png">
+  <title>SeAh Kim Portfolio</title>
   <!-- 공통 CSS -->
   <link rel="stylesheet" href="./css/style.css">
   <!-- 웹폰트 -->
@@ -63,7 +70,7 @@
 
   <section id="home">
     <div class="header_group">
-    <h1 class="type" data-text='HELLO ~．I’m SeAh Kim!<br>Welcome to my Portfolio Homepage ．．．'></h1>
+    <h1 class="type" data-text='HELLO~~ I’m SeAh Kim!. Welcome to my Portfolio Homepage'></h1>
     </div>
     <div class="you-bg" data-youtube="https://youtu.be/LN8RNhbzn6E">
     </div>
@@ -266,12 +273,13 @@
             });
             typeIt
               .type(text_array[0])
-              .pause(300)
-              .break()
-              .type(text_array[1])
               .pause(5000)
-              .go();
+              // .break()
+              // .type(text_array[1])
+              // .pause(5000)
+              // .go();
           }
+          console.log('333')
     });
 
     // 콘텐츠 애니메이션 설정
@@ -284,7 +292,7 @@
     });
     enterView({
       selector: '#about ul',
-      offset: 0.5,
+      offset: 0.3,
       enter: function (el) {
         el.classList.add('fade-slide-down');
       },

@@ -54,6 +54,12 @@
           if(top >= sec_top_y[2]){
             update_pager(2);
           }
+          if(top >= sec_top_y[3]){
+            update_pager(3);
+          }
+          if(top >= sec_top_y[4]){
+            update_pager(4);
+          }
 
         })
 
