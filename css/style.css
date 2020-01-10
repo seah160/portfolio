@@ -43,6 +43,33 @@ section{
 }
 h1 { font-size: 40px;}
 h2 { font-size: 24px;}
+/* 섹션 */
+#home{
+  background: #000;
+}
+#about{
+  background: #D4E5E9;
+}
+#portfolio{
+  background: #fff;
+}
+#career{
+  background: #D4E5E9;
+}
+#contact{
+  background: #FFE6DC;
+}
+
+/* 우측 페이지 인디케이터 */
+#pager {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  z-index: 99;
+}
+#pager li.on a {
+  color: #FCB08C;
+}
 
 /* 메인메뉴 */
 #main_header {
@@ -125,35 +152,6 @@ header #main_gnb li{
   }
 }
 
-/* 섹션 */
-#home{
-  background: #000;
-}
-#about{
-  background: #D4E5E9;
-}
-#portfolio{
-  background: #fff;
-}
-#career{
-  background: #D4E5E9;
-}
-#contact{
-  background: #FFE6DC;
-}
-
-/* 우측 페이지 인디케이터 */
-#pager {
-  position: fixed;
-  top: 50%;
-  right: 20px;
-  z-index: 99;
-}
-#pager li.on a {
-  color: #FCB08C;
-}
-
- 
 /* about 섹션 */
 #about .container {
   overflow: hidden;
@@ -194,51 +192,52 @@ header #main_gnb li{
 
 
 /*portfolio 섹션*/
-#portfolio {
-  background-color: #f0f0f0;
-  padding-bottom: 60px;
-  overflow: hidden;
-}
-
-#portfolio ul {
-  opacity: 0;
-  margin: 20px auto;
-  width: 70%;
-  /* border: 2px solid blue; */
-}
-#portfolio li{
-  width: 33.33%;
-  float: left;
-}
-#portfolio li:nth-child(4n) { clear: both;}
-#portfolio li img { 
-  width: 33.33%;
-  display: block;
-}
 #portfolio .title_line {
   border-bottom: 5px solid #D4E5E9;
 }
-#portfolio .content .button-group button{
+#portfolio .button-group button{
+  width: 334px;
+  float: left;
   padding: 10px 20px;
   font-size: 18px;
   color: #666;
   background: #D4E5E9;
   border: 1px solid #fff;
   outline: none;
-  margin-left: 10px;
+  margin-right: 20px;
+  margin-bottom: 60px;
   transition: 0.5s;
-  width: 18%;
 }
-#portfolio .content .button-group button:hover{
+#portfolio .button-group button:nth-child(4) { 
+  margin-right: 0;
+  }
+#portfolio .button-group button:hover{
   background: #fff;
   color: #999;
   border: 1px solid #D4E5E9;
   cursor: pointer;
   }
-#portfolio img {
+
+#portfolio ul > li {
+  width: 334px;
+  float: left;
+  margin-right: 20px;
+  padding-bottom: 20px;
+}
+#portfolio ul > li:nth-child(4),#portfolio ul > li:nth-child(8) { 
+  margin-right: 0;
+  }
+#portfolio ul > li img {
+  display: inline-block;
+  outline:1px solid #ccc;
+  box-shadow: 0px 1px 4px rgba(0,0,0,0.6);
+}
+/* bxslider */
+#portfolio .slider {
   width: 100%;
-  background-color: #000;
-  overflow: hidden;
+}
+.slider img {
+  /* width: 100%; */
 }
 /*확대버튼
 .gallery .box a{
