@@ -1,3 +1,49 @@
+$(function(){	
+	
+	function init_portfolio_list(){
+		// 작품 목록 불러오기
+		$portfolio_list = $('#portfolio .portfolio_list');
+		$portfolio_list.load('templates/portfolio_list.html', function(){
+			// 3번 목록까지만 표시
+			$portfolio_list.find('li:gt(2)').slideUp(); 
+			$('.btn_close').hide(); // 축소버튼 비표사
+		});		
+	}	
+	init_portfolio_list();
+	
+	// 전체보기 토글 버튼
+	$('#portfolio .btn_all').click(function(){
+		$(this).toggleClass('all');	
+		
+		// 버튼 상태에 따라 목록 열고 닫기
+		if($(this).hasClass('all')){
+			$portfolio_list.find('li').slideDown();	
+			$('.btn_close').show();
+		}
+		return false;
+	});
+	
+	$('#portfolio .btn_close').click(function(){
+		$portfolio_list.find('li').slideUp();
+		init_portfolio_list();
+		$('#portfolio .btn_all').toggleClass('all');
+		$('.btn_close').hide();
+		return false;
+	});
+	
+	// 페이지 스크롤 효과
+	$('#main_gnb a, #to_top a, #visual a').on('click', function(){
+		// 이동한 내부 링크의 위치값(hash)
+		var target = $(this.hash);
+		console.log(target);
+		$('html, body').animate({
+			scrollTop: target.offset().top
+		});
+		return false; // 앵커태그 무효화
+	});
+
+
+
       // 페이지 스크롤 함수
       function goto_scroll(move_top) {
         $("html,body")
@@ -59,8 +105,7 @@
           }
           if(top >= sec_top_y[4]){
             update_pager(4);
-          }
-
+		  }
         })
 
         // auto type
