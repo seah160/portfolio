@@ -138,15 +138,15 @@
 			<article class="container">
 
 				<div class="button-group">
-					<button id="Web" class=".col-4">Web</button>
-					<button id="Package" class=".col-4">Package</button>
-					<button id="Branding" class=".col-4">Branding</button>
-					<button id="Graphic" class=".col-4">Graphic</button>
+					<button id="web" class=".col-4">Web</button>
+					<button id="package" class=".col-4">Package</button>
+					<button id="branding" class=".col-4">Branding</button>
+					<button id="promotion" class=".col-4">Promotion</button>
 					</div>
 				</div>
 				<div class="gallery">
 					<div class="web">
-						<ul id="da-thumbs" class="da-thumbs web">
+						<ul class="grid" class="grid web">
 				  	<li class="grid-item web"><a data-fancybox_="gallery" href="https://eubody.netlify.com"><img
 						src="./images/web01.jpg" alt="이유바디">
 						<div><span>언더웨어 쇼핑몰 홈페이지(작품 홈페이지 이동)</span></div>
@@ -183,7 +183,7 @@
         </div>
         
         <div class="Package">
-          <ul id="da-thumbs" class="da-thumbs package">
+          <ul class="grid" class="grid package">
           <li class="grid-item package"><a data-fancybox="gallery" href="./images/package01.jpg"><img
             src="./images/package01.jpg" alt="브랜딩">
             <div><span>브랜딩 BI(작품 상세페이지 이동)</span></div>
@@ -220,7 +220,7 @@
             </div>
 
 				<div class="branding">
-				<ul id="da-thumbs" class="da-thumbs Branding">
+				<ul class="grid" class="grid Branding">
 				<li class="grid-item branding"><a data-fancybox="gallery" href="./images/branding01-1.jpg"><img
 					src="./images/branding01.jpg" alt="브랜딩">
 					<div><span>브랜딩 BI(작품 상세페이지 이동)</span></div>
@@ -341,7 +341,61 @@
               // .go();
           }
           console.log('333')
-    });
+		});
+		
+      // 초기 모드(전체 작품)
+      $('.grid').isotope({
+        // options
+        itemSelector: '.grid-item',
+        layoutMode: 'fitRows',
+        filter: '.web'
+      });  
+        
+    $('#web').click(function(){
+      $('.grid').isotope({
+        // options
+        itemSelector: '.grid-item',
+        layoutMode: 'fitRows',
+        filter: '.web'
+      });        
+    })
+    
+    $('#package').click(function(){
+      $('.grid').isotope({
+        // options
+        itemSelector: '.grid-item',
+        layoutMode: 'fitRows',
+        filter: '.pCKAGE'
+      });        
+		})
+
+    $('#package').click(function(){
+      $('.grid').isotope({
+        // options
+        itemSelector: '.grid-item',
+        layoutMode: 'fitRows',
+        filter: '.package'
+      });        
+		})
+		
+    $('#branding').click(function(){
+      $('.grid').isotope({
+        // options
+        itemSelector: '.grid-item',
+        layoutMode: 'fitRows',
+        filter: '.branding'
+      });        
+		})
+
+    $('#promotion').click(function(){
+      $('.grid').isotope({
+        // options
+        itemSelector: '.grid-item',
+        layoutMode: 'fitRows',
+        filter: '.promotion'
+      });        
+    })
+
 
 	// 콘텐츠 애니메이션 설정
 	enterView({
@@ -372,7 +426,7 @@
   
 		$('.container').imagesLoaded(function () {
 		  // 선택할 목록 지정
-		  $('.da-thumbs').isotope({
+		  $('.grid').isotope({
 			// options
 			itemSelector: '.grid-item',
 			layoutMode: 'fitRows'
@@ -380,21 +434,21 @@
   
 		  // 전체 목록
 		  $('.btn-all').on('click', function () {
-			$('.da-thumbs').isotope({ filter: '*' })
+			$('.grid').isotope({ filter: '*' })
 		  });
   
 		  // name1
 		  $('.btn-name1').on('click', function () {
-			$('.da-thumbs').isotope({ filter: '.name1' })
+			$('.grid').isotope({ filter: '.name1' })
 		  });
   
 		  // name2
 		  $('.btn-name2').on('click', function () {
-			$('.da-thumbs').isotope({ filter: '.name2' })
+			$('.grid').isotope({ filter: '.name2' })
 		  });        
   
 		  // 호버 효과
-		  $('#da-thumbs > li').hoverdir();
+		  $('#grid > li').hoverdir();
   
 		}) // end imageLoaded
   
