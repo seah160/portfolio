@@ -100,6 +100,7 @@ $(function(){
           if(top >= sec_top_y[5]){
             update_pager(5);
           }
+      
         })
 
         // auto type

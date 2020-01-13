@@ -57,8 +57,12 @@
 					<li><a href="#contact">CONTACT</a></li>		
 				</ul>
 			</nav>
-			</div>
-			<button id="toggle"><i class="fas fa-bars"></i></button>
+      </div>
+      <!--
+			<div id="nav-btn">
+				<a href="#">
+						<i class="fas fa-bars"></i>
+			</a>-->
 		</div>
 	</header>
 
@@ -75,11 +79,11 @@
 	
 	<section id="home">
 		<div class="home_txt">
-		<h1 class="type" data-text='HELLO~~ I’m SeAh Kim!. Welcome to my Portfolio Homepage'></h1>
+		<h2 class="type" data-text='HELLO~~ I’m SeAh Kim!. Welcome to my Portfolio Homepage'></h1>
 		</div>
 		<div class="you-bg" data-youtube="https://youtu.be/LN8RNhbzn6E">
 		</div>
-		<a href="#about" class="cta">ABOUT</a>
+		<a href="#about" class="cta">ABOUT ME</a>
 		<div class="arrow">
       	<a href="#about"><img src="images/arrow.png" alt="arrow"></a></div>
     	</div>
@@ -132,13 +136,17 @@
 		<h1>PORTFOLIO</h1>
 		<span class="title_line"></span>
 			<article class="container">
+
 				<div class="button-group">
 					<button id="Web" class=".col-4">Web</button>
 					<button id="Package" class=".col-4">Package</button>
 					<button id="Branding" class=".col-4">Branding</button>
 					<button id="Graphic" class=".col-4">Graphic</button>
-				  </div>
-				<ul id="da-thumbs" class="da-thumbs web">
+					</div>
+				</div>
+				<div class="gallery">
+					<div class="web">
+						<ul id="da-thumbs" class="da-thumbs web">
 				  	<li class="grid-item web"><a data-fancybox_="gallery" href="https://eubody.netlify.com"><img
 						src="./images/web01.jpg" alt="이유바디">
 						<div><span>언더웨어 쇼핑몰 홈페이지(작품 홈페이지 이동)</span></div>
@@ -155,25 +163,102 @@
 						src="./images/web04.jpg" alt="카페베네">
 						<div><span>카페베네 홈페이지 리뉴얼(작품 홈페이지 이동)</span></div>
 						</a></li>
-				  	<li class="grid-item web"><a data-fancybox_="gallery" href="./images/web05-1.jpg"><img
+				  	<li class="grid-item web"><a data-fancybox="gallery" href="./images/web05-1.jpg"><img
 						src="./images/web05.jpg" alt="주차웹">
 						<div><span>주차공유 앱 디자인(작품 상세페이지 이동)</span></div>
 						</a></li>
-				  	<li class="grid-item web"><a data-fancybox_="gallery" href="./images/web06-1.jpg"><img
+				  	<li class="grid-item web"><a data-fancybox="gallery" href="./images/web06-1.jpg"><img
 						src="./images/web06.jpg" alt="국민은행">
 						<div><span>국민은행 홈페이지 리뉴얼(작품 상세페이지 이동)</span></div>
 						</a></li>
-				  	<li class="grid-item web"><a data-fancybox_="gallery" href="./images/web07-1.jpg"><img
+				  	<li class="grid-item web"><a data-fancybox="gallery" href="./images/web07-1.jpg"><img
 						src="./images/web07.jpg" alt="지오다노">
 						<div><span>지오다노 홈페이지 리뉴얼(작품 상세페이지 이동)</span></div>
 						</a></li>
-				  	<li class="grid-item web"><a data-fancybox_="gallery" href="./images/web08-1.jpg"><img
+				  	<li class="grid-item web"><a data-fancybox="gallery" href="./images/web08-1.jpg"><img
 						src="./images/web08.jpg" alt="아이콘">
 						<div><span>아이콘 디자인(작품 상세페이지 이동)</span></div>
 						</a></li>
 				</ul>
-			</article>
-	</section>
+        </div>
+        
+        <div class="Package">
+          <ul id="da-thumbs" class="da-thumbs package">
+          <li class="grid-item package"><a data-fancybox="gallery" href="./images/package01.jpg"><img
+            src="./images/package01.jpg" alt="브랜딩">
+            <div><span>브랜딩 BI(작품 상세페이지 이동)</span></div>
+            </a></li>			
+          <li class="grid-item package"><a data-fancybox="gallery" href="./images/package02.jpg"><img
+            src="./images/package02.jpg" alt="브랜딩">
+            <div><span>브랜딩 BI(작품 상세페이지 이동)</span></div>
+            </a></li>
+          <li class="grid-item package"><a data-fancybox="gallery" href="./images/package03.jpg"><img
+            src="./images/package03.jpg" alt="브랜딩">
+            <div><span>브랜딩 BI(작품 상세페이지 이동)</span></div>
+            </a></li>
+          <li class="grid-item package"><a data-fancybox="gallery" href="./images/package04.jpg"><img
+            src="./images/package04.jpg" alt="브랜딩">
+            <div><span>브랜딩 BI(작품 상세페이지 이동)</span></div>
+            </a></li>
+            <li class="grid-item package"><a data-fancybox="gallery" href="./images/package05.jpg"><img
+              src="./images/package05.jpg" alt="브랜딩">
+              <div><span>브랜딩 BI(작품 상세페이지 이동)</span></div>
+              </a></li>			
+            <li class="grid-item package"><a data-fancybox="gallery" href="./images/package06.jpg"><img
+              src="./images/package06.jpg" alt="브랜딩">
+              <div><span>브랜딩 BI(작품 상세페이지 이동)</span></div>
+              </a></li>
+            <li class="grid-item package"><a data-fancybox="gallery" href="./images/package07.jpg"><img
+              src="./images/package07.jpg" alt="브랜딩">
+              <div><span>브랜딩 BI(작품 상세페이지 이동)</span></div>
+              </a></li>
+            <li class="grid-item package"><a data-fancybox="gallery" href="./images/package08.jpg"><img
+              src="./images/package08.jpg" alt="브랜딩">
+              <div><span>브랜딩 BI(작품 상세페이지 이동)</span></div>
+              </a></li>
+            </ul>
+            </div>
+
+				<div class="branding">
+				<ul id="da-thumbs" class="da-thumbs Branding">
+				<li class="grid-item branding"><a data-fancybox="gallery" href="./images/branding01-1.jpg"><img
+					src="./images/branding01.jpg" alt="브랜딩">
+					<div><span>브랜딩 BI(작품 상세페이지 이동)</span></div>
+					</a></li>			
+				<li class="grid-item branding"><a data-fancybox="gallery" href="./images/branding02-1.jpg"><img
+					src="./images/branding02.jpg" alt="브랜딩">
+					<div><span>브랜딩 BI(작품 상세페이지 이동)</span></div>
+					</a></li>
+				<li class="grid-item branding"><a data-fancybox="gallery" href="./images/branding03-1.jpg"><img
+					src="./images/branding03.jpg" alt="브랜딩">
+					<div><span>브랜딩 BI(작품 상세페이지 이동)</span></div>
+					</a></li>
+				<li class="grid-item branding"><a data-fancybox="gallery" href="./images/branding04-1.jpg"><img
+					src="./images/branding04.jpg" alt="브랜딩">
+					<div><span>브랜딩 BI(작품 상세페이지 이동)</span></div>
+					</a></li>
+					<li class="grid-item branding"><a data-fancybox="gallery" href="./images/branding05-1.jpg"><img
+						src="./images/branding05.jpg" alt="브랜딩">
+						<div><span>브랜딩 BI(작품 상세페이지 이동)</span></div>
+						</a></li>			
+					<li class="grid-item branding"><a data-fancybox="gallery" href="./images/branding06-1.jpg"><img
+						src="./images/branding06.jpg" alt="브랜딩">
+						<div><span>브랜딩 BI(작품 상세페이지 이동)</span></div>
+						</a></li>
+					<li class="grid-item branding"><a data-fancybox="gallery" href="./images/branding07-1.jpg"><img
+						src="./images/branding07.jpg" alt="브랜딩">
+						<div><span>브랜딩 BI(작품 상세페이지 이동)</span></div>
+						</a></li>
+					<li class="grid-item branding"><a data-fancybox="gallery" href="./images/branding08-1.jpg"><img
+						src="./images/branding08.jpg" alt="브랜딩">
+						<div><span>브랜딩 BI(작품 상세페이지 이동)</span></div>
+						</a></li>
+					</ul>
+					</div>
+					
+				</div>
+				</article>
+		</section>
 
 	<section id="careers">
 		<h1>MY CAREERS</h1>
