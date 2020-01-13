@@ -1,5 +1,4 @@
 /* css */
-
 *{
 	margin: 0; padding: 0;
 	box-sizing: border-box;
@@ -85,19 +84,20 @@ p{
   }
   #main_header .container h1 {
 	float: left;
-	padding-top: 10px;
+	padding-top: 13px;
   }
 
   #main_header > .container #main_gnb li {
 	display: inline-block;
 	font-size: 16px;
-  }
+	}
   /* gnb hover */
 #main_gnb a:hover {
     color: #FCB08C;
   }
 /* 토글 메뉴, 장바구니 아이콘 비표시 */
-#toggle, #util i { display: none;}
+#toggle { display: none;}
+
 /* 스크롤시 고정 메뉴 */
 #main_gnb{ margin-top: 20px;}
 #main_gnb li { display: inline-block;}
@@ -105,83 +105,20 @@ p{
 	padding: 0 30px;
 }
 
-@media (max-width: 767px) {
-	#main_header {
-		text-align: right; 
-	  }
-	  #main_header .container {
-		padding: 10px;
-	  }
-	  #main_header h1 { 
-		position: fixed;
-		left: 50%; top: 0px;
-		z-index: 9;
-		background: #504533;
-		width: 100%;
-	  }
-	  #main_gnb {
-		margin-top: 10px;
-	  }
-	  #util {
-		margin-bottom: 10px;
-	  }		
-	.nav_group {
-		position: fixed;
-		left: 0; top: 0px;
-		width: 100%;
-		height: 0;
-		background: #fff;
-		color: #666;
-		/* opacity: 0; */
-		overflow: hidden;
-		transition: 0.4s;
-		z-index: 9;
-	  }
-	  .nav_group  li {
-		margin: 1.4em 0;
-	  }
-	  .nav_group.show {
-		height: 260px;
-	  }
-	  
-	  /* 메뉴 슬라이드 다운 시 글자색 반전 */
-	  .nav_group + #toggle > i {
-		color: #fff;
-	  }
-	  .nav_group.show + #toggle > i {
-		color: #666;
-	  }
-	  
-	  #toggle {
-		position: fixed;
-		left: 10px; top: 16px;
-		z-index: 10;
-	  }
-	  #toggle > i { 
-		/* color: #666; */
-		font-size: 24px;
-	  }
-	  #util .fa-shopping-bag {
-		position: fixed;
-		right: 20px; top: 16px;
-		font-size: 24px;
-		color: #fff; 
-	  }
-#portfolio .categories {
-	display: none;
-}
-}/*@media (max-width: 767px)영역 end
 
 /* 우측 페이지 인디케이터 */
 #pager {
 	position: fixed;
 	top: 50%;
-	right: 30px;
+	right: 40px;
 	z-index: 99;
-  }
+	font-size: 14px;
+	line-height: 28px;
+	opacity: 70%;
+	}
+
   #pager li.on a {
-	color: #fff;
-	font-weight: bold;
+	color: #FCB08C;
   }
 
 /* 메인 비주얼 영역 */
@@ -270,7 +207,17 @@ p{
 .line { 
   outline: 1px solid #999;
   margin-bottom: 0.6em;}
-
+	
+	#about .col-2:first-child{
+		padding-right: 40px;
+	}
+	#about .col-2:last-child{
+		padding-left: 40px;
+	}
+	#about .col-2:nth-child(2){
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 
 /*portfolio 섹션*/
 #portfolio{
@@ -279,7 +226,7 @@ p{
     text-align: center;
 }
 #portfolio .button-group button{
-	width: 23.8%;
+	width: 23.5%;
 	float: center;
 	padding: 14px 20px;
 	font-size: 18px;
@@ -369,7 +316,6 @@ p{
   color: #666;
   border: 1px solid #999;
 }
-
 #contact .col-2:first-child{
 	padding-left: 30px;
 	padding-right: 30px;
@@ -393,6 +339,7 @@ p{
 }
 #main_footer > #to_top > a{
 	display: inline-block;
+	animation: arrow-m 1s ease infinite alternate;
 }
 #to_top .fa-arrow-up{
 	font-size: 24px;
@@ -406,15 +353,28 @@ p{
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
-
 /* 모바일 */
 @media (max-width: 767px){
-
-	#main_header{
-		height: 90px;
+	h1{font-size: 28px;}
+	h2{font-size: 22px;}
+	.container {
+		width: 100%;
+		margin: 0 auto;
+		padding: 20px;
+		/* background: #f00; */
+	}
+	#main_header {
 		position: fixed;
-		text-align: center; 
-	}	
+		text-align: center;
+		height: 80px;
+		}
+	#main_header h1 {
+		position: fixed;
+		left: 50%; top: 5px;
+		transform: translateX(-50%);
+		z-index: 9;
+		width: 100%;
+	}
 	#main_gnb{ 
 		margin-top: 20px;
 	}
@@ -422,18 +382,10 @@ p{
 		padding: 0 10px;
 	}
 
-	  #main_header h1 { 
-		position: fixed;
-		left: 100px; top: 14px;
-		transform: translateX(-50%);
-		z-index: 9;
-		background: #fff;
-		width: 100%;
-	  }
-	  #util {
-		margin-bottom: 10px;
-	  }
-	  .nav_group {
+	#util {
+	margin-bottom: 10px;
+	}
+	.nav_group {
 		position: fixed;
 		left: 0; top: 0px;
 		width: 100%;
@@ -445,14 +397,14 @@ p{
 		transition: 0.4s;
 		z-index: 9;
 	  }
-	  .nav_group  li {
+	.nav_group  li {
 		margin: 1.4em 0;
 	  }
-	  .nav_group.show {
+	.nav_group.show {
 		height: 260px;
 	  }
 	  
-	  /* 메뉴 슬라이드 다운 시 글자색 반전 */
+	/* 메뉴 슬라이드 다운 시 글자색 반전 */
 	  .nav_group + #toggle > i {
 		color: #fff;
 	  }
@@ -469,18 +421,48 @@ p{
 		/* color: #666; */
 		font-size: 24px;
 	  }
-	#home{
-		height: calc(100vh - 120px);
-	}	
-	#careers .col-2:last-child{ margin-top: 60px;}
 #about .pic{margin-left: 1.2em;}
-#about .edu{margin-top: 2em;}
-#contact{
-text-align: center;
-}
+#about .edu{margin-top: 3em;}
 #contact .more_me{
     margin-top: 4em;
-}}
+}
+			/* 메뉴 슬라이드 다운 시 글자색 반전 */
+			
+			.nav_group + #toggle > i {
+			color: #666;
+			}
+			.nav_group.show + #toggle > i {
+			color: #666;
+			}
+			
+			#toggle .fas fa-bars{
+				position: fixed;
+				right: 20px; top: 16px;
+				font-size: 24px;
+				color: #666; 
+			}
+	
+			#toggle > i { 
+			color: #666;
+			font-size: 24px;
+			}
+	#portfolio .categories {
+		display: none;
+	}
+	#pager {
+		position: fixed;
+		top: 45%;
+		right: 5px;
+		z-index: 99;
+		font-size: 12px;
+		line-height: 28px;
+		opacity: 70%;
+		}
+		#pager li.on a {
+		color: #FCB08C;
+		}
+}/*@media (max-width: 767px)영역 end
+	
 /* 중간크기 이상(컬럼이 형성) */
 @media (min-width: 768px){	
 	/* 레이아웃 시스템 */
@@ -499,16 +481,4 @@ text-align: center;
 		width: 25%;
 		float: left;
 	}
-}
-	
-	#about .col-2:first-child{
-		padding-right: 40px;
-	}
-	#about .col-2:last-child{
-		padding-left: 40px;
-	}
-	#about .col-2:nth-child(2){
-		padding-left: 20px;
-		padding-right: 20px;
-	}
-}
+}/*@media (min-width: 768px) 중간영역 end
