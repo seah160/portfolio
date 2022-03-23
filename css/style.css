@@ -132,7 +132,7 @@ p{
 	
 }
 .home_txt{
-  z-index: 999;
+  z-index: 99;
   text-align: center;
   color: #fff;
   font-size: 4em;
@@ -157,17 +157,17 @@ p{
 
 .arrow {
     position: absolute;
-    bottom: 10px;
+    bottom: 15px;
     left: 50%;
     transform: translateX(-50%);
     animation: arrow-m 1s ease infinite alternate;
 }
 @keyframes arrow-m {
   from {
-      bottom: 15px;
+      bottom: 25px;
   }
   to {
-      bottom: 30px;
+      bottom: 35px;
   }
 }
 
