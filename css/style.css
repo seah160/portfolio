@@ -175,10 +175,11 @@ p{
 #about{
 	background: #D4E5E9;
 	padding-top: 126px;
+	padding-bottom: 1em;
 }
 
 #about .list ul {
-  margin-bottom: 4.5em;
+  margin-bottom: 4em;
   letter-spacing: 1px;
   text-align: left;
 }
@@ -219,6 +220,7 @@ p{
 #portfolio{
 	background: #efefef;
     padding-top: 126px;
+	padding-bottom: 1em;
     text-align: center;
 }
 #portfolio .button-group button{
@@ -231,7 +233,7 @@ p{
 	border: 1px solid #fff;
 	outline: none;
 	margin-right: 1%;
-	margin-bottom: 3em;
+	margin-bottom: 1em;
 	transition: 0.5s;
   }
   #portfolio .button-group button:last-child{
@@ -244,11 +246,10 @@ p{
 	cursor: pointer;
 	}
 
-  
-
 /* 커리어 */
 #careers {
 	padding-top: 126px;
+	padding-bottom: 1em;
 	background: #D4E5E9;
 	background-size: cover;
 	background-position: center;
@@ -256,7 +257,7 @@ p{
 	color: #FFF;
 }
 #careers h2{
-	margin-bottom: 6em;
+	margin-bottom: 10em;
 }
 
 /* contact 섹션 */
@@ -266,14 +267,14 @@ p{
 	line-height: 2.4em;
 	padding: 20px;
 	padding-top: 100px;
-	padding-bottom: 6em;
+	padding-bottom: 3em;
 }
 #contact h2{
 	padding-bottom: 16px;
 }
 #contact .fine li {
   display: inline-block;
-  margin-right: 1em;
+  margin-right: 0.5em;
 }
 #contact .fine h2{
 	padding-top: 78px;
