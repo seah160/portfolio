@@ -423,29 +423,34 @@ p{
 #contact .more_me{
     margin-top: 4em;
 }
-			/* 메뉴 슬라이드 다운 시 글자색 반전 */
-			
-			.nav_group + #toggle > i {
-			color: #666;
-			}
-			.nav_group.show + #toggle > i {
-			color: #666;
-			}
-			
-			#toggle .fas fa-bars{
-				position: fixed;
-				right: 20px; top: 16px;
-				font-size: 24px;
-				color: #666; 
-			}
+
+#portfolio ul { overflow: hidden;}
+#portfolio .grid > li {
+  width: 50%;
+  float: left;
+}
+
+	/* 메뉴 슬라이드 다운 시 글자색 반전 */
 	
-			#toggle > i { 
-			color: #666;
-			font-size: 24px;
-			}
-	#portfolio .categories {
-		display: none;
+	.nav_group + #toggle > i {
+	color: #666;
 	}
+	.nav_group.show + #toggle > i {
+	color: #666;
+	}
+		
+	#toggle .fas fa-bars{
+		position: fixed;
+		right: 20px; top: 16px;
+		font-size: 24px;
+		color: #666; 
+	}
+
+	#toggle > i { 
+	color: #666;
+	font-size: 24px;
+	}
+
 	#pager {
 		position: fixed;
 		top: 45%;
