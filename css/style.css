@@ -16,7 +16,6 @@ body{
 	max-width: 1370px;
 	margin: 0 auto;
 /*	border: 1px solid red;*/
-	overflow: hidden;
 	padding: 10px;
 }
 li{ list-style-type: none;
